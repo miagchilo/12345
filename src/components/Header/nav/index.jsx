@@ -17,8 +17,8 @@ const navItems = [
     href: "/work",
   },
   {
-    title: "About",
-    href: "/about",
+    title: "Poblegarden",
+    href: "/poblegarden",
   },
   {
     title: "Contact",

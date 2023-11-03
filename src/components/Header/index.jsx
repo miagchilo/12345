@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import { AnimatePresence } from 'framer-motion';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Nav from './nav';
+import Link from 'next/link'
 import gsap from 'gsap';
 
 export default function index() {
@@ -33,14 +34,14 @@ export default function index() {
     return (
         <>
         <div ref={header} className={styles.header}>
-            <div className={styles.logo}>
+            <Link href="/" className={styles.logo}>
                 <p className={styles.copyright}>©</p>
                 <div className={styles.name}>
                     <p className={styles.codeBy}>Code by</p>
                     <p className={styles.dennis}>Stas</p>
                     <p className={styles.snellenberg}>Miagchilo</p>
                 </div>
-            </div>
+            </Link>
             <div className={styles.nav}>
                 <div className={styles.el}>
                     <a>Work</a>
